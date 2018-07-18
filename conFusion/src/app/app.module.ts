@@ -8,18 +8,20 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { DishService } from './services/dish.service';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatButtonModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
