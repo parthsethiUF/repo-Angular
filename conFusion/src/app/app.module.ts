@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishService } from './services/dish.service';
 import 'hammerjs';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -17,6 +18,8 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     DishdetailComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   providers: [DishService],
   bootstrap: [AppComponent]
