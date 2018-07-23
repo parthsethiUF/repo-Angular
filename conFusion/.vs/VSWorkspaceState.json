@@ -7,12 +7,10 @@
     "\\src\\app\\dishdetail",
     "\\src\\app\\footer",
     "\\src\\app\\header",
-    "\\src\\app\\home",
-    "\\src\\app\\login",
     "\\src\\app\\menu",
     "\\src\\app\\services",
     "\\src\\app\\Shared"
   ],
-  "SelectedNode": "\\src\\app\\login\\login.component.html",
+  "SelectedNode": "\\src\\app\\contact\\contact.component.html",
   "PreviewInSolutionExplorer": false
 }
