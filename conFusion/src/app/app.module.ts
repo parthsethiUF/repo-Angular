@@ -41,6 +41,8 @@ import { LoginComponent } from './login/login.component';
 
 import { baseURL } from './shared/baseurl';
 import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { RestangularConfigFactory } from './shared/restConfig';
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,7 +76,8 @@ import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
     ReactiveFormsModule,
     HttpModule,
     HttpClientModule ,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
   providers: [DishService,
     PromotionService,
