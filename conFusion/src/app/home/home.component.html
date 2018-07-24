@@ -48,4 +48,24 @@
     <h2>Error</h2>
     <h4>{{dishErrMess}}</h4>
   </div>
+
+    <mat-card *ngIf="leader" fxFlex>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+        <h3>{{leader.name | uppercase}}</h3>
+      </mat-card-title>
+    </mat-card-header>
+      
+    <img height="200px" src="{{BaseURL + leader.image}}" alt={{leader.name}}>
+    <mat-card-content>
+      <p>
+        {{leader.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <div [hidden]="leader">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
+
 </div>

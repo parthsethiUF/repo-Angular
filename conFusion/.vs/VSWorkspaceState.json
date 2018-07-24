@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\about",
     "\\src\\app\\contact",
     "\\src\\app\\dishdetail",
     "\\src\\app\\footer",
     "\\src\\app\\header",
-    "\\src\\app\\menu",
-    "\\src\\app\\services",
-    "\\src\\app\\Shared"
+    "\\src\\app\\home",
+    "\\src\\app\\menu"
   ],
-  "SelectedNode": "\\src\\app\\contact\\contact.component.html",
+  "SelectedNode": "\\src\\app\\services\\promotion.service.ts",
   "PreviewInSolutionExplorer": false
 }

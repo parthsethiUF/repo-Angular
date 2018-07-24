@@ -30,24 +30,60 @@
   </div>
 
   <div fxFlex="40" *ngIf="dish">
+    <div>
+      <mat-list fxFlex>
+        <h3>Comments</h3>
+        <mat-list-item *ngFor="let c of dish.comments">
+          <p matLine><span>{{c.comment}}</span> </p>
 
-    <mat-list fxFlex>
-      <h3>Comments</h3>
-      <mat-list-item *ngFor="let c of dish.comments">
-        <p matLine><span>{{c.comment}}</span> </p>
+          <p matLine><span> {{c.rating}} Stars</span> </p>
 
-        <p matLine><span> {{c.rating}} Stars</span> </p>
-
-        <p matLine><span> -- {{c.author}} Stars</span>  {{c.date | date : medium}} </p>
+          <p matLine><span> -- {{c.author}} </span>  {{c.date | date : medium}} </p>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <mat-list *ngIf="commentForm.valid">
+      <mat-list-item>
+        <p matLine>{{currComment.comment}}</p>
+        <p matLine> {{currComment.rating}} Stars</p>
+        <p matLine> -- {{currComment.author}}</p>
       </mat-list-item>
     </mat-list>
+
+    <form novalidate [formGroup]="commentForm" #fform="ngForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field class="full-width">
+          <input matInput formControlName="author" placeholder="Name" type="text" required>
+          <mat-error *ngIf="formErrors.author">{{formErrors.author}}</mat-error>
+        </mat-form-field>
+
+      </p>
+      <p>
+        <mat-slider matInput formControlName="rating"
+                    class="example-margin"
+                    max=5
+                    min=1
+                    step=1
+                    thumbLabel=true
+                    tickInterval="1"
+                    value=5>
+        </mat-slider>
+      </p>
+      <p>
+        <mat-form-field class="full-width">
+          <textarea matInput formControlName="comment" placeholder="Your Comment" type="text" rows=12 required></textarea>
+        </mat-form-field>
+        <mat-error *ngIf="formErrors.comment">{{formErrors.comment}}</mat-error>
+      </p>
+      <p>
+        <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="!commentForm.valid">Submit</button>
+      </p>
+    </form>
   </div>
 
 
   <div [hidden]="dish|| errMess">
     <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
-
-
   </div>
 
   <div *ngIf="errMess">

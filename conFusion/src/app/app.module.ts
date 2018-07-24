@@ -21,6 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
+
+import { MatSliderModule } from '@angular/material/slider';
 
 import 'hammerjs';
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -66,6 +69,7 @@ import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
     FlexLayoutModule,
     AppRoutingModule,
     MatDialogModule,
+    MatSliderModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
@@ -74,6 +78,7 @@ import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
   ],
   providers: [DishService,
     PromotionService,
+    LeaderService,
     { provide: 'BaseURL', useValue: baseURL },
     ProcessHTTPMsgService
   ],
