@@ -224,5 +224,106 @@
       "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstname": "Parth",
+      "lastname": "Sethi",
+      "telnum": "12345678",
+      "email": "p.sethi@ufl.edu",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 1
+    },
+    {
+      "firstname": "Parth",
+      "lastname": "sethi",
+      "telnum": "12345678",
+      "email": "asdfghj@sdfgh.sdfg",
+      "agree": true,
+      "contacttype": "Email",
+      "message": "ertcfgvyubhinjokm",
+      "id": 2
+    },
+    {
+      "firstname": "Parth",
+      "lastname": "Sethi",
+      "telnum": "1234567",
+      "email": "parthsethi16.ps@gmail.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 3
+    },
+    {
+      "firstname": "Parth",
+      "lastname": "Sethi",
+      "telnum": "234567890",
+      "email": "sethiparth.ps@gmail.com",
+      "agree": true,
+      "contacttype": "None",
+      "message": "09ju09u9u9ju09ju909ju",
+      "id": 4
+    },
+    {
+      "firstname": "2fqhdixw3",
+      "lastname": "wrfcd",
+      "telnum": "123",
+      "email": "p2ed@ww.c",
+      "agree": true,
+      "contacttype": "None",
+      "message": "3prinwd",
+      "id": 5
+    },
+    {
+      "firstname": "woruh",
+      "lastname": "wrufvbc",
+      "telnum": "1234",
+      "email": "q@h.l",
+      "agree": false,
+      "contacttype": "None",
+      "message": "11111",
+      "id": 6
+    },
+    {
+      "firstname": "qq",
+      "lastname": "qq",
+      "telnum": "11",
+      "email": "q.a@q.q",
+      "agree": false,
+      "contacttype": "None",
+      "message": "qq",
+      "id": 7
+    },
+    {
+      "firstname": "www",
+      "lastname": "www",
+      "telnum": "111",
+      "email": "w.w@w",
+      "agree": false,
+      "contacttype": "None",
+      "message": "www",
+      "id": 8
+    },
+    {
+      "firstname": "qqwqwqw",
+      "lastname": "zrrd",
+      "telnum": "232",
+      "email": "w.w@q",
+      "agree": true,
+      "contacttype": "None",
+      "message": "ytytd6",
+      "id": 9
+    },
+    {
+      "firstname": "lk3r c c",
+      "lastname": "3wcyv",
+      "telnum": "13",
+      "email": "q.q@j",
+      "agree": false,
+      "contacttype": "None",
+      "message": "cwcwwc",
+      "id": 10
+    }
+  ]
 }
